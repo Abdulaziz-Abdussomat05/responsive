@@ -26,6 +26,7 @@ body {
 
 .container {
   width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -95,7 +96,7 @@ body {
   margin-bottom: 25px;
 }
 .message__box .message__container .message__right-box form input {
-  width: 470px;
+  width: 300px;
   padding: 15px 0;
   padding-left: 15px;
   margin-bottom: 45px;
@@ -214,7 +215,6 @@ footer .footer__container ul p {
 }
 footer .footer__bottom {
   margin-top: 80px;
-  width: 1200px;
   padding-top: 25px;
   border-top: 2px solid #536D7A;
 }
@@ -231,4 +231,60 @@ footer .footer__bottom ul li p {
   margin-right: 10px;
   color: #1D2F38;
   font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  ul li {
+    margin-right: 30px;
+  }
+  .container {
+    max-width: 930px;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .message__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .message__container .newsletter__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .footer__container ul {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__center-box ul {
+    margin: 0 auto;
+  }
+  .footer__center-box img {
+    width: 100%;
+  }
+  .message__container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .footer__container ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__container p {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 900px) and (max-width: 490px) {
+  .message__right-box .newsletter__box p {
+    width: 100px;
+  }
+  .message__left-box img {
+    width: 250px;
+  }
+  .footer__bottom {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
